@@ -1,0 +1,79 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif, "poppins";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* for loading effect */
+.spinner {
+  height: 50px;
+  width: max-content;
+  /* font-size: 18px; */
+  /* font-weight: 600; */
+  font-family: monospace;
+  letter-spacing: 1em;
+  color: #f5f5f5;
+  filter: drop-shadow(0 0 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2em;
+  font-weight: 600;
+  perspective: 800px;
+}
+
+.spinner span {
+  animation: loading6454 1.75s ease infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.spinner span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.spinner span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.spinner span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+/* .spinner span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.spinner span:nth-child(7) {
+  animation-delay: 1.5s;
+} */
+
+@keyframes loading6454 {
+  0%,
+  100% {
+    transform: translateY(0);
+    color: rgba(221, 139, 187, 0.925);
+  }
+
+  50% {
+    transform: translateY(-10px);
+    color: rgb(255, 179, 80);
+  }
+}
